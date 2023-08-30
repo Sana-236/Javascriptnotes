@@ -1,0 +1,197 @@
+
+<html>
+    <head>
+        <title>MY PAGE</title>
+       <script src="utube.js" type="text/javascript"> </script>
+     <!---    <script type="text/javascript">
+   /*   ------variable and printing-----
+     var num=3;
+      var num1=5;
+      result=num+num1;
+        document.write(result);
+        ------- if-else find num is even or odd------
+        var x=3;
+        if(x%2==0){
+            document.write(x + " is even number");
+        }
+        else{
+            document.write(x +" is odd number");
+        }
+        -------if-else if positive or negative or 0-----
+        var x=9;
+        if(x>0){
+            document.write("positive number");
+        }
+        else if(x<0){
+            document.write("negative number");
+        }
+        else{
+            document.write("neither positive nor negative number");
+        }
+        -------Switch case(used when there are lot of conditions------
+        var a=4
+        switch(a){
+            case 1:document.write("monday");
+                break;
+            case 2:document.write("saturday");
+                break;
+            case 3:document.write("sunday");
+                break;
+            default:document.write("my day")
+                break;
+        }
+        --------for loop--------
+        for(var i=1;i<=10;i++){
+            document.write(5*i+" ")
+        }
+        ------while loop------
+        var x=1;
+        while(x<10){
+            document.write(x);
+            x+=3;
+        }
+        -------do-while loop------
+        var x=2;
+        do{
+            document.write("sana"+ " ");
+            x++;
+
+        }while(x<5);
+       ---------functions-------
+       function add(a,b){
+         var total=a+b;
+           document.write(total);
+       }
+       add(3,9);
+       -----------ARRAYS-------
+       var  arr=[1,2,3,4,5];
+       document.write(arr[2]);
+       for(var i=0;i<=4;i++){
+           document.write(" "+i);
+       }
+       var arr1=new Array("mango","apple","banana");
+       document.write(arr1);
+       arr1.push("sana");
+       document.write(arr1);
+       ---------objects----------
+       var car={
+            brand:"lamborghini",
+            model:"model 2",
+            price:9000000,
+            autopilot:function (){
+           document.write("<h2> my car is mine</h2>");
+       }
+        }
+      car.autopilot();
+       document.write(car.brand);
+        ---------constructors(to create more objects)---------
+        function Cars(brand,model,price){
+            this.brand=brand;
+            this.model=model;
+            this.price=price;
+            this.autopilot=function (){
+           document.write("<h2> car is mine</h2>");
+       }
+        }
+        var c1=new Cars("tesla","model 2",98000);
+        var c2=new Cars("tata","safari",94000);
+        c1.autopilot();
+        document.write(c2.price);
+        ---------type of---------
+        var str1=new String();// string data type of object
+        document.write(typeof(str1));
+        //delete Car.price;(to delete some property)*/
+        </script>-->
+    </head>
+    <body>
+       <!-----button click-----
+         <h1 id="h1tag"> sana</h1>
+        <h2>halsu</h2>
+        <div>
+        <p>this is my life</p>
+        <button onclick="buttonClick()">Click Me</button>
+    </div>
+     ------take input from textbox------
+     <input id="text1" placeholder="enter anything">
+     <br><br>
+     <button onclick="fn()" id="btn1" >Click Me</button>
+     ----------RADIO BUTTON-------------
+     <input id="rd1" name="grp1" type="radio" value="sana_halsu">Sana_Halsu
+    (if you give same name for both inputs it will allow us to select one among them if not we can select two options)
+     <br><br>
+     <input id="rd2" name="grp1" type="radio" value="farru_sanu">Farru_Sanu<br><br>
+     <button id="btn1" onclick="fnc()">Click Me</button>
+     ------------SELECT BOX-----------
+     <select id="selectbox">
+         <option value="Sana Farhan">Sana Farhan</option>
+         <option value="Sana Apsara">Sana Apsara</option>
+         <option value="Sana Nazeer">Sana Nazeer</option>
+     </select><br><br>
+     <button id="btn1" onclick="fnc()">Click Me</button>
+     ----------get element by tag name-----------
+     (when you have more tags and have to access them all at once then we use element by tag name)
+     <p id="p1">this is paragraph1</p>
+     <p>this is paragraph2</p>
+     <p>this is paragraph3</p>
+     <p>this is paragraph4</p>
+     <br><br>
+     <button id="btn" onclick="change_style()" >Click Me</button>
+     ---------get Element by class name----------
+    (when we have more class we can use get by class name. we can modify all the tags regardless of the type example: we can modify the paragraph, anchor,heading tags )
+     <p class="mypara"> this is my life</p>
+     <p>this is paragraph1</p>
+     <p class="mypara"> this is my rules</p>
+     <p>this is paragraph2</p>
+     <p class="mypara"> this is my boundaries</p>
+     <a class="mypara" href="#"> this is anchor tag</a>
+     <br><br>
+     <button id="btn" onclick="fnc()">Click Me</button>
+    -----------mouse over and mouse out events----------
+    <img id="img1" onmouseover="new_image()" onmouseout="old_image()" src="cat1.jpg" width="250">
+     -----------form validation-----------
+     //(return validate will show that the function validate will return something)
+     <form onsubmit=" return validate()"action="message.html">
+         <input id="user" placeholder="Username" type="text">
+         <label id="luser" style="color:red;visibility:hidden">invalid</label>
+        (initially the label is hidden when given wrong js makes it visible in one color and indicates that it is invalid)
+     <br><br>
+     <input id="pass" placeholder="password" type="password">
+     <br><br>
+     <button id="btn"  type="submit" >Click Me</button>
+    </form>
+-------------Regular expression---------
+(they are used to perform powerful pattern-matching and search and replace functions on text)
+<form onsubmit=" return validate()"action="message.html">
+    <input id="user" placeholder="Username" type="text">
+    <label id="luser" style="color:red;visibility:hidden">invalid</label>
+<br><br>
+<button id="btn"  type="submit" >Click Me</button>
+</form>
+----------------Regular expression-email validation----------
+<form>
+    <input id="text1" placeholder="Email" type="text">
+    <label id="lbltext" style="color:red; visibility:hidden">invalid</label>
+<br><br>
+<button onclick="validate()" type="button" >Click Me</button>
+</form>
+---------------debugging using console log----------------
+<input id="text1" placeholder="TEXT 1" type="text">
+<br><br>
+<input id="text2" placeholder="TEXT 2" type="text">
+<br><br>
+<button onclick="addValues()" id="btn" type="button" >Add</button>
+<h2 id="op">Result= </h2>
+--------------------timing functions-------------
+<button onclick="start()" id="btn1" type="button" >Start</button>
+<h2 id="op">Text</h2>
+<button onclick="stop()" id="btn2" type="button" >Stop</button>
+-------------------fade in fade out animations-----------------------------
+<button onclick="fadeOut()" id="btn1" >Fade Out</button>
+<br><br>
+<img id="img1" src="cat1.jpg" width="250px"/>
+<br><br>
+<button onclick="fadeIn()" id="btn2">Fade In</button>
+-------------------zoom in and zoom out animation-------------------->
+<img id="img1" onmouseover="increase()" onmouseout="decrease()" src="cat.jpg" width="100"/>
+</body>
+</html>
